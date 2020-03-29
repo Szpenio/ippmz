@@ -6,7 +6,7 @@
 #include <stdbool.h>
 #include "bst.h"
 
-// auxiliary strcutre to store name and pointer to inner Tree of certain object
+// auxiliary structure to store name and pointer to inner Tree of certain object
 struct Keep;
 
 typedef struct Keep* MoveUp;
@@ -32,7 +32,7 @@ Tree getPtr(Tree t, char *x) {
 }
 
 // traverses inner layers of [t], searching for [x] and/or [y]
-// depending on argument another is true or not
+// depending whether argument [another] is true or not
 bool traverse(Tree t, char *x, char *y, bool another) {
   bool found = false;
 
